@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "676881190805",
+    "project_id": "mamasave-299be",
+    "storage_bucket": "mamasave-299be.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676881190805:android:8a0d37853294ea1a32f09c",
+        "android_client_info": {
+          "package_name": "com.example.mamasave"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPzdaSzAJ87RnxdAYx9qQEoWm4e2cOYN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

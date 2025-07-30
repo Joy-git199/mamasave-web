@@ -1,0 +1,38 @@
+name: mamasave
+description: A Flutter-based mobile application for maternal health support.
+
+publish_to: 'none' # Do not publish this package to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.5
+  google_fonts: ^6.1.0
+  table_calendar: ^3.0.9
+  uuid: ^4.2.1
+  fl_chart: ^0.68.0 # Charting library for vitals trends
+  url_launcher: ^6.2.2
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.7.0 
+  cloud_firestore: ^5.0.0 # <--- THIS MUST BE PRESENT
+  http: ^1.2.1 # For making HTTP requests to your Node.js backend
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+    # Add more assets here if needed, for example:
+    # - assets/onboarding1.png
+    # - - assets/onboarding2.png
