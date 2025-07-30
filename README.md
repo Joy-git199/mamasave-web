@@ -1,6 +1,6 @@
-# mamasave
+# mamasave - A Flutter Project
 
-A new Flutter project created with FlutLab - https://flutlab.io
+A new Flutter project.
 
 ## Getting Started
 
@@ -13,7 +13,9 @@ For help getting started with Flutter, view our
 https://flutter.dev/docs, which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Getting Started: FlutLab - Flutter Online IDE
+## Notes (Optional - if you want to keep FlutLab reference)
 
+This project was initially created with FlutLab - https://flutlab.io
+For FlutLab resources:
 - How to use FlutLab? Please, view our https://flutlab.io/docs
 - Join the discussion and conversation on https://flutlab.io/residents

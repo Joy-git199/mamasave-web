@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MamaSave: Smart Maternal Health Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F2F4F3;
+            color: #333F48;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link:hover {
+            color: #7DAEDB;
+            border-bottom-color: #7DAEDB;
+        }
+        .section-heading {
+            color: #333F48;
+        }
+        .btn-primary {
+            background-color: #7DAEDB;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #6a9ac9;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div id="app" class="min-h-screen">
+        <header class="bg-black sticky top-0 z-40 shadow-sm">
+            <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex-shrink-0">
+                        <a href="#hero" class="font-bold text-white" style="font-size: 2.5rem;">MamaSave</a>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#problem" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">The Problem</a>
+                            <a href="#solution" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">Our Solution</a>
+                            <a href="#technology" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">Technology</a>
+                            <a href="#impact" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">Impact</a>
+                            <a href="#team" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">The Team</a>
+                            <a href="#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">Contact</a>
+                        </div>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#problem" class="nav-link text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">The Problem</a>
+                    <a href="#solution" class="nav-link text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">Our Solution</a>
+                    <a href="#technology" class="nav-link text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">Technology</a>
+                    <a href="#impact" class="nav-link text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">Impact</a>
+                    <a href="#team" class="nav-link text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">The Team</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero" class="relative py-20 sm:py-24 lg:py-32 overflow-hidden" style="background-image: url('my-background.jpg'); background-size: cover; background-position: center;">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#7DAEDB] leading-tight mb-6 animate-fade-in-down">
+                        Product Overview
+                    </h1>
+                    <p class="text-lg sm:text-xl text-white max-w-3xl mx-auto mb-8 animate-fade-in-up">
+                        MamaSave is a wearable maternal health monitoring system designed to reduce maternal and neonatal mortality rates in rural and underserved communities. Built around a compact, low-cost embedded system, MamaSave continuously monitors vital signs such as body temperature, heart rate, and uterine pressure using reliable sensors like the DS18B20, MAX30100, and DF9-40. The system is physically embedded into a soft, adjustable belt worn around the waist, ensuring maximum comfort and minimal interference with daily activities.
+
+Unlike traditional hospital-based monitoring solutions, MamaSave brings healthcare closer to the user by enabling home-based, continuous observation. Sensor data is processed in real time using an ESP32 microcontroller and transmitted wirelessly via Bluetooth to a mobile app. This mobile interface acts as both a visual dashboard and alert system, helping expectant mothers, caregivers and health workers identify warning signs early and act quickly in case of emergencies.
+
+The wearable is especially tailored for areas with limited infrastructure. By operating offline and on battery power, MamaSave ensures uninterrupted functionality in regions where electricity and internet access may be inconsistent. The project was designed with cost-effectiveness, simplicity, and cultural acceptance in mind, making it accessible to families and clinics across low-income areas.
+
+Beyond its technical functionality, MamaSave is more than a gadget, it’s a life-saving companion. It supports mothers in monitoring their pregnancy safely from home, helps health centres extend their reach, and contributes to Uganda’s national goals of reducing preventable maternal deaths. MamaSave represents a smart fusion of engineering and empathy, tackling a real-world problem with sustainable, student led innovation.
+
+                    </p>
+                    <a href="#solution" class="inline-block bg-[#7DAEDB] text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#6a9ac9] transform hover:scale-105 transition-all duration-300 animate-fade-in-up delay-200">
+                        Discover Our Solution
+                    </a>
+                </div>
+            </section>
+
+            <section id="problem" class="py-16 sm:py-20 bg-white">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 section-heading">The Urgent Problem</h2>
+                    <div class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">                       
+                        <p class="font-semibold">There is an urgent and critical need for an accessible, low-cost, real-time, and location-aware solution that can effectively monitor the health of expectant mothers and newborns, triggering timely emergency interventions to save lives.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="solution" class="py-16 sm:py-20 bg-[#F2F4F3]">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 section-heading">Our Innovative Solution</h2>
+                    <p class="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-10">
+                        MamaSave is an embedded system-based wearable and alert solution designed to address these critical gaps by providing continuous maternal and newborn health monitoring.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="card p-6 rounded-lg text-center">
+                            <img src="wearable-health-monitor.png" alt="Wearable Health Monitor" class="w-20 h-20 mx-auto mb-4 rounded-xl">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Wearable Health Monitor</h3>
+                            <p class="text-gray-600">Designed as a waist belt for pregnant mothers. Equipped with sensors to monitor: Maternal heart rate, Blood Oxygen , Body temperature, Uterine contractions (labour detection) .</p>
+                        </div>
+                        <div class="card p-6 rounded-lg text-center">
+                            <img src="emergency-detection.png" alt="Real-time Emergency Detection" class="w-20 h-20 mx-auto mb-4 rounded-xl">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Real-time Emergency Detection</h3>
+                            <p class="text-gray-600">System continuously analyzes sensor data. Detects dangerous patterns such as Abnormal blood Oxygen levels, abnormal heart rate, or onset of labour. Automatically triggers an alert when thresholds are exceeded.</p>
+                        </div>
+                        <div class="card p-6 rounded-lg text-center">
+                            <img src="alert-system.png" alt="Alert System" class="w-20 h-20 mx-auto mb-4 rounded-xl">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Alert System</h3>
+                            <p class="text-gray-600">Sends emergency messages with the mother's condition and GPS location. Notifies local midwives, health centers, family contacts or ambulance drivers. Works with mobile data for reliability</p>
+                        </div>
+                        <div class="card p-6 rounded-lg text-center">
+                            <img src="gps-location.png" alt="GPS-Based Location Sharing" class="w-20 h-20 mx-auto mb-4 rounded-xl">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">GPS-Based Location Sharing</h3>
+                            <p class="text-gray-600">Mobile in-built GPS module pinpoints the mother’s location during an emergency. Helps responders quickly locate the individual in remote areas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="technology" class="py-16 sm:py-20 bg-white">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 section-heading">Our Technology Stack</h2>
+                    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-gray-700 leading-relaxed">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4">Core Hardware</h3>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li><strong>Microcontroller:</strong> STM32 / ESP32 / Arduino Nano</li>
+                                <li><strong>Sensors:</strong> MAX30100 (heart rate & SpO2), BP sensor, temperature sensor, vibration sensor (for contractions)</li>
+                                <li><strong>Power:</strong> lithium-ion battery, charging circuit</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4">Design & Software Approach</h3>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li><strong>Physical Design:</strong> Custom perforated board for robust connections.</li>
+                                <li><strong>Casing:</strong> 3D printed enclosure integrated into the belt.</li>
+                                <li><strong>Power Efficiency:</strong> Optimized for low power consumption, utilizing ESP32 deep sleep.</li>
+                                <li><strong>User Interface:</strong> Mobile application (front-end developed) for data visualization and interaction, utilizing phone's GPS.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="impact" class="py-16 sm:py-20 bg-[#F2F4F3]">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 section-heading">Expected Impact</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                        <div class="card p-6 rounded-lg">
+                            <img src="reduce-maternal-deaths.png" alt="Reduce Maternal Deaths" class="w-20 h-20 mx-auto mb-4 rounded-xl">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Reduce Maternal Deaths</h3>
+                            <p class="text-gray-600">Enabling real-time detection and rapid response to complications.</p>
+                        </div>
+                        <div class="card p-6 rounded-lg">
+                            <img src="lower-infant-mortality.png" alt="Lower Infant Mortality" class="w-20 h-20 mx-auto mb-4 rounded-xl">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Lower Infant Mortality</h3>
+                            <p class="text-gray-600">Addressing postnatal risks and ensuring timely care for newborns.</p>
+                        </div>
+                        <div class="card p-6 rounded-lg">
+                            <img src="community-engagement.png" alt="Increase Community Engagement" class="w-20 h-20 mx-auto mb-4 rounded-xl">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Increase Community Engagement</h3>
+                            <p class="text-gray-600">Empowering families and local health workers in maternal health.</p>
+                        </div>
+                        <div class="card p-6 rounded-lg">
+                            <img src="improve-health-services.png" alt="Improve Health Services" class="w-20 h-20 mx-auto mb-4 rounded-xl">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Improve Health Services</h3>
+                            <p class="text-gray-600">Providing data for better intervention strategies and resource allocation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="team" class="py-16 sm:py-20 bg-white">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 section-heading">Our Dedicated Team</h2>
+                    <div class="max-w-2xl mx-auto text-lg text-gray-700 text-center leading-relaxed">
+                        <p class="mb-4">We are a group of Computer Science Year 1 students from Makerere University passionate about leveraging technology to solve real-world problems. This project is part of our recess term coursework, and we are committed to developing an impactful solution for maternal health in Uganda.</p>
+                        <p>Our diverse skills in embedded systems, software development, and UI/UX design come together to bring MamaSave to life.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-16 sm:py-20 bg-[#F2F4F3]">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 section-heading">Get In Touch</h2>
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+                        We are actively seeking feedback, collaborations, and support to further develop MamaSave and bring it to the communities that need it most.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <a href="mailto:agabajjjoel@gmail.com" class="btn-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            Email Us
+                        </a>
+                        <a href="https://github.com/JOELAGABA/mamasave-flutter-app" class="inline-block bg-gray-200 text-gray-800 font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            Learn More (GitHub/Project Repo)
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-[#A3B18A] py-8 mt-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                <p>© 2025 MamaSave Recess Project. All rights reserved.</p>
+                <p class="text-sm mt-2">Designed for Ugandan mothers by Makerere university Group 20 of Recess Term 2025</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        document.querySelector('[aria-controls="mobile-menu"]').setAttribute('aria-expanded', 'false');
+                        document.querySelector('[aria-controls="mobile-menu"] svg:first-child').classList.remove('hidden');
+                        document.querySelector('[aria-controls="mobile-menu"] svg:last-child').classList.add('hidden');
+                    }
+                });
+            });
+
+            const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+                mobileMenuButton.setAttribute('aria-expanded', !expanded);
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.querySelector('svg:first-child').classList.toggle('hidden');
+                mobileMenuButton.querySelector('svg:last-child').classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
